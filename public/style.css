@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf4ff;
+    color: #10233f;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 70px;
+    background: rgba(255, 255, 255, 0.92);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0878b8;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #10233f;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0878b8;
+}
+
+.hero {
+    min-height: 650px;
+    background:
+        linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0.50)),
+        url("images/laundry-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 70px 90px;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.tagline {
+    display: inline-block;
+    background: #d8ebff;
+    color: #086fc0;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #0878d1;
+}
+
+.description {
+    font-size: 22px;
+    color: #4d5b6d;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 16px 45px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.primary {
+    background: #0878d1;
+    color: white;
+}
+
+.secondary {
+    background: white;
+    color: #0878d1;
+    border: 2px solid #0878d1;
+}
+
+.info-section {
+    background: white;
+    padding: 35px 90px;
+    color: #10233f;
+}
+
+.info-section h2 {
+    font-size: 34px;
+    color: #0878d1;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.features {
+    width: 88%;
+    margin: 40px auto 60px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+.login-page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(234, 244, 255, 0.85), rgba(234, 244, 255, 0.85)),
+        url("images/laundry-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    width: 380px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.login-card h2 {
+    color: #0878d1;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 14px;
+    background: #0878d1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #055f9f;
+}
+
+.login-card p {
+    margin-top: 18px;
+}
+
+.login-card a {
+    color: #0878d1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.admin-page {
+    min-height: 100vh;
+    padding: 60px;
+    background:
+        linear-gradient(rgba(234, 244, 255, 0.85), rgba(234, 244, 255, 0.85)),
+        url("images/laundry-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.admin-card {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.admin-card h2 {
+    text-align: center;
+    color: #0878d1;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+.admin-card table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+
+.admin-card th {
+    background: #0878d1;
+    color: white;
+    padding: 14px;
+}
+
+.admin-card td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.admin-card select {
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.dashboard-page {
+    min-height: 100vh;
+    padding: 60px;
+    background:
+        linear-gradient(rgba(234, 244, 255, 0.85), rgba(234, 244, 255, 0.85)),
+        url("images/laundry-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header h2 {
+    color: #0878d1;
+    font-size: 34px;
+}
+
+.logout-btn {
+    background: #0878d1;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-form {
+    margin-top: 30px;
+    background: #f4f9ff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.booking-form h3,
+.orders-title {
+    color: #10233f;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.booking-form select,
+.booking-form input {
+    padding: 13px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.booking-form button {
+    padding: 13px 22px;
+    background: #0878d1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.dashboard-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.dashboard-card th {
+    background: #0878d1;
+    color: white;
+    padding: 14px;
+}
+
+.dashboard-card td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+.register-page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(234, 244, 255, 0.85), rgba(234, 244, 255, 0.85)),
+        url("images/laundry-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-card {
+    background: white;
+    width: 400px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.register-card h2 {
+    color: #0878d1;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.register-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.register-card button {
+    width: 100%;
+    padding: 14px;
+    background: #0878d1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-card button:hover {
+    background: #055f9f;
+}
+
+.register-card p {
+    margin-top: 18px;
+}
+
+.register-card a {
+    color: #0878d1;
+    font-weight: bold;
+    text-decoration: none;
+}
+.payment-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.payment-box {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.payment-box h2 {
+    color: #0878d1;
+    margin-bottom: 10px;
+}
+
+.payment-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.qr-box {
+    background: #f4f9ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.fake-qr {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border: 3px dashed #0878d1;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0878d1;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.payment-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #0878d1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #999 !important;
+}
+.paid {
+    background: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.unpaid {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.pay-btn {
+    background: #0878d1;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.pay-btn:hover {
+    background: #055fa3;
+}
+
+.print-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.print-btn:hover {
+    background: #1e7e34;
+}
+.status-paid {
+    background: #d4edda;
+    color: #155724;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.status-unpaid {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}

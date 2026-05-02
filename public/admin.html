@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard - Washmate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page" onload="loadOrders()">
+
+    <div class="admin-card">
+        <h2>Admin Dashboard</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Service</th>
+                    <th>Weight</th>
+                    <th>Pickup Date</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Payment Status</th>
+                    <th>Payment Method</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="ordersTable"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

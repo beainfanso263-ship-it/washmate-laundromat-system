@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Dashboard - Washmate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page" onload="loadMyOrders()">
+
+    <div class="dashboard-card">
+        <div class="dashboard-header">
+            <h2>Customer Dashboard</h2>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+
+        <form id="orderForm" class="booking-form">
+            <h3>Book Laundry Service</h3>
+
+            <select id="service_type" required>
+                <option value="">Select Service</option>
+                <option value="Wash Only">Wash Only</option>
+                <option value="Wash and Dry">Wash and Dry</option>
+                <option value="Full Service">Full Service</option>
+            </select>
+
+            <input type="number" id="weight" placeholder="Weight in kg" required>
+            <input type="date" id="pickupDate" min="" />
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <h3 class="orders-title">My Laundry Orders</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Weight</th>
+                    <th>Pickup Date</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Payment</th>
+                </tr>
+            </thead>
+            <tbody id="myOrdersTable"></tbody>
+        </table>
+    </div>
+
+    <div id="paymentModal" class="payment-modal">
+    <div class="payment-box">
+        <h2>Online Payment</h2>
+        <p>Select your payment method</p>
+
+        <select id="paymentMethod">
+            <option value="GCash">GCash</option>
+            <option value="PayMaya">PayMaya</option>
+            <option value="Card">Card</option>
+        </select>
+
+        <div class="qr-box">
+            <h3>GCash Payment</h3>
+            <p>Scan or confirm payment</p>
+            <div class="fake-qr">QR</div>
+        </div>
+
+        <button onclick="confirmPayment()">Confirm Payment</button>
+        <button onclick="closePaymentModal()" class="cancel-btn">Cancel</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
